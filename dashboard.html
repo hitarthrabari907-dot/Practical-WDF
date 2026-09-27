@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal - Student Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Semantic Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-title">
+        <span style="font-size: 1.6rem;">🎓</span>
+        <div>
+          <h1>StudentHub</h1>
+          <span class="tagline">University Student & Academic Portal</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="login.html">Logout</a></li>
+          <li><a href="profile.html" class="btn btn-secondary btn-sm">My Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Dashboard</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="container">
+
+    <!-- Welcome Banner -->
+    <section class="page-banner">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <h2>Welcome back, Rahul Sharma!</h2>
+          <p>B.Tech Information Technology &bull; Semester 5 &bull; Roll No: <strong>23IT001</strong></p>
+        </div>
+        <div>
+          <a href="profile.html" class="btn btn-sm btn-outline">Edit Profile</a>
+          <a href="events.html" class="btn btn-sm btn-primary">Browse Events</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Stat Cards -->
+    <section>
+      <div class="grid-4">
+        
+        <div class="stat-card primary">
+          <div class="stat-label">Attendance</div>
+          <div class="stat-number" style="color: #003366;">89.5%</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-label">Current CGPA</div>
+          <div class="stat-number" style="color: #006699;">8.74</div>
+        </div>
+
+        <div class="stat-card accent">
+          <div class="stat-label">Active Courses</div>
+          <div class="stat-number" style="color: #d97706;">6</div>
+        </div>
+
+        <div class="stat-card danger">
+          <div class="stat-label">Assignments Due</div>
+          <div class="stat-number" style="color: #dc3545;">2</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Layout -->
+    <div class="layout-with-sidebar">
+
+      <section>
+        
+        <!-- Enrolled Courses Table -->
+        <div style="margin-bottom: 25px;">
+          <h3 style="color: #003366; margin-bottom: 12px;">Enrolled Courses (Semester 5)</h3>
+          
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Course Code</th>
+                  <th scope="col">Subject Name</th>
+                  <th scope="col">Faculty</th>
+                  <th scope="col">Attendance</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>IT301</strong></td>
+                  <td>Web Development Frameworks</td>
+                  <td>Prof. N. Patel</td>
+                  <td>92%</td>
+                  <td><span class="badge badge-success">Good</span></td>
+                </tr>
+                <tr>
+                  <td><strong>IT302</strong></td>
+                  <td>Database Management Systems</td>
+                  <td>Dr. S. Shah</td>
+                  <td>88%</td>
+                  <td><span class="badge badge-success">Good</span></td>
+                </tr>
+                <tr>
+                  <td><strong>IT303</strong></td>
+                  <td>Computer Networks</td>
+                  <td>Prof. R. Dave</td>
+                  <td>85%</td>
+                  <td><span class="badge badge-success">Good</span></td>
+                </tr>
+                <tr>
+                  <td><strong>IT304</strong></td>
+                  <td>Design & Analysis of Algorithms</td>
+                  <td>Dr. M. Joshi</td>
+                  <td>78%</td>
+                  <td><span class="badge badge-warning">Average</span></td>
+                </tr>
+                <tr>
+                  <td><strong>IT305</strong></td>
+                  <td>Software Engineering</td>
+                  <td>Prof. K. Mehta</td>
+                  <td>94%</td>
+                  <td><span class="badge badge-success">Good</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Pending Submissions -->
+        <section>
+          <h3 style="color: #003366; margin-bottom: 12px;">Pending Submissions</h3>
+          
+          <div class="grid-2">
+            <article class="card">
+              <header class="card-header">
+                <h4>WDF: Practical 2 Submission</h4>
+              </header>
+              <div class="card-body">
+                <p style="font-size: 0.9rem; color: #555555;">
+                  Semantic HTML5 pages with simple tags and accessibility features.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <span class="badge badge-danger">Due: Tomorrow</span>
+                <a href="contact.html" class="btn btn-sm btn-outline">Submit</a>
+              </footer>
+            </article>
+
+            <article class="card">
+              <header class="card-header">
+                <h4>DBMS: ER Diagram Schema</h4>
+              </header>
+              <div class="card-body">
+                <p style="font-size: 0.9rem; color: #555555;">
+                  Complete E-R diagram schema for Student Information System.
+                </p>
+              </div>
+              <footer class="card-footer">
+                <span class="badge badge-warning">Due: Next Week</span>
+                <a href="contact.html" class="btn btn-sm btn-outline">Submit</a>
+              </footer>
+            </article>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- Sidebar -->
+      <aside aria-label="Schedule & Updates">
+        
+        <div class="sidebar-widget">
+          <h3>🕒 Today's Schedule</h3>
+          <ul class="widget-list">
+            <li>
+              <strong>09:30 AM - 11:30 AM</strong><br>
+              WDF Lab (Lab 402)
+            </li>
+            <li>
+              <strong>12:30 PM - 01:30 PM</strong><br>
+              DBMS Lecture (Room 205)
+            </li>
+            <li>
+              <strong>02:30 PM - 04:30 PM</strong><br>
+              Computer Networks Lab (Lab 405)
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>📌 Quick Actions</h3>
+          <ul class="widget-list">
+            <li><a href="events.html">Browse Campus Events</a></li>
+            <li><a href="profile.html">Update Profile Info</a></li>
+            <li><a href="admin.html">Administrator Control Center</a></li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>StudentHub Portal</h4>
+          <p>A centralized academic portal designed to facilitate student learning and campus administration.</p>
+        </div>
+        <div class="footer-column">
+          <h4>University Helpdesk</h4>
+          <p>University Main Campus</p>
+          <p>Email: support@studenthub.edu</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

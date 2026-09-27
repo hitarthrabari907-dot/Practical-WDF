@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Semantic Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-title">
+        <span style="font-size: 1.6rem;">🎓</span>
+        <div>
+          <h1>StudentHub</h1>
+          <span class="tagline">University Student & Academic Portal</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="register.html" class="btn btn-secondary btn-sm">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Login</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="container">
+
+    <section class="page-banner">
+      <h2>Account Login</h2>
+      <p>Sign in with your university credentials to view courses, attendance, and portal services.</p>
+    </section>
+
+    <div class="layout-with-sidebar">
+
+      <!-- Login Form Section -->
+      <section>
+        
+        <form action="dashboard.html" method="GET">
+          
+          <fieldset>
+            <legend>User Authentication</legend>
+
+            <!-- Role Selector -->
+            <div class="form-group">
+              <label for="user-role">Select Role <span class="required">*</span></label>
+              <select id="user-role" name="role" required>
+                <option value="student" selected>Student</option>
+                <option value="faculty">Faculty / Instructor</option>
+                <option value="admin">Administrator / Staff</option>
+              </select>
+            </div>
+
+            <!-- Username / Roll No -->
+            <div class="form-group">
+              <label for="username">Student ID / Email <span class="required">*</span></label>
+              <input type="text" id="username" name="username" placeholder="e.g. 23IT001 or name@university.edu" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="login-password">Password <span class="required">*</span></label>
+              <input type="password" id="login-password" name="password" placeholder="Enter password" required>
+            </div>
+
+            <!-- Options -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
+              <label class="form-checkbox">
+                <input type="checkbox" id="remember-me" name="remember">
+                <span>Remember me</span>
+              </label>
+              <a href="contact.html" style="font-size: 0.85rem; color: #003366; text-decoration: none;">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+          </fieldset>
+
+          <p style="text-align: center; margin-top: 12px; font-size: 0.9rem; color: #555555;">
+            Need an account? <a href="register.html" style="color: #006699; font-weight: bold;">Register here</a>
+          </p>
+
+        </form>
+      </section>
+
+      <!-- Sidebar -->
+      <aside aria-label="Login Guidance">
+        <div class="sidebar-widget">
+          <h3>🔒 Security Tips</h3>
+          <ul class="widget-list">
+            <li>Always sign out after using public campus computers.</li>
+            <li>Do not share your password with anyone.</li>
+            <li>Contact the IT desk if you face login issues.</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Quick Demo</h3>
+          <p style="font-size: 0.9rem; color: #555555;">
+            Click <strong>Sign In</strong> to navigate directly to the Student Dashboard.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>StudentHub Portal</h4>
+          <p>A centralized academic portal designed to facilitate student learning and campus administration.</p>
+        </div>
+       
+        <div class="footer-column">
+          <h4>University Helpdesk</h4>
+          <p>University Main Campus</p>
+          <p>Email: support@studenthub.edu</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub Portal. </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

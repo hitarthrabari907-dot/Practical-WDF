@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 2. Semantic Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-title">
+        <span style="font-size: 1.6rem;">🎓</span>
+        <div>
+          <h1>StudentHub</h1>
+          <span class="tagline">University Student & Academic Portal</span>
+        </div>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html" class="btn btn-secondary btn-sm">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 3. Semantic Main Content -->
+  <main id="main-content" class="container">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to StudentHub Portal</h2>
+      <p>
+        Your centralized platform for managing courses, viewing academic attendance, registering for campus events, and accessing student resources.
+      </p>
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-secondary">New Student Registration</a>
+        <a href="login.html" class="btn btn-outline" style="background-color: #ffffff; color: #003366;">Student Login</a>
+      </div>
+    </section>
+
+    <!-- Layout: Modules Grid & Sidebar Notices -->
+    <div class="layout-with-sidebar">
+      
+      <!-- Key Modules Section -->
+      <section aria-labelledby="modules-title">
+        <h3 id="modules-title" style="color: #003366; margin-bottom: 15px;">Key Portal Modules</h3>
+        
+        <div class="grid-2">
+          
+          <!-- Card 1: Dashboard -->
+          <article class="card">
+            <header class="card-header">
+              <h4>📚 Academic Dashboard</h4>
+            </header>
+            <div class="card-body">
+              <p>Check daily course attendance, review internal assessment marks, and view semester subject timetables.</p>
+            </div>
+            <footer class="card-footer">
+              <span class="badge badge-primary">Academics</span>
+              <a href="dashboard.html" class="btn btn-sm btn-outline">Open Dashboard</a>
+            </footer>
+          </article>
+
+          <!-- Card 2: Events -->
+          <article class="card">
+            <header class="card-header">
+              <h4>📅 Campus Events</h4>
+            </header>
+            <div class="card-body">
+              <p>Explore university technical hackathons, workshops, guest lectures, and cultural fest activities.</p>
+            </div>
+            <footer class="card-footer">
+              <span class="badge badge-success">Activities</span>
+              <a href="events.html" class="btn btn-sm btn-outline">View Events</a>
+            </footer>
+          </article>
+
+          <!-- Card 3: Profile -->
+          <article class="card">
+            <header class="card-header">
+              <h4>👤 Student Profile</h4>
+            </header>
+            <div class="card-body">
+              <p>Manage personal profile data, academic records (SGPA/CGPA), and verified technical skill badges.</p>
+            </div>
+            <footer class="card-footer">
+              <span class="badge badge-warning">Profile</span>
+              <a href="profile.html" class="btn btn-sm btn-outline">My Profile</a>
+            </footer>
+          </article>
+
+          <!-- Card 4: Admin Panel -->
+          <article class="card">
+            <header class="card-header">
+              <h4>🛡️ Administration</h4>
+            </header>
+            <div class="card-body">
+              <p>Administrative moderation for verifying student accounts, posting notices, and monitoring metrics.</p>
+            </div>
+            <footer class="card-footer">
+              <span class="badge badge-danger">Admin</span>
+              <a href="admin.html" class="btn btn-sm btn-outline">Admin Panel</a>
+            </footer>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Sidebar: Notices & Quick Links -->
+      <aside aria-label="Campus Notices">
+        
+        <div class="sidebar-widget">
+          <h3>📢 Latest Notices</h3>
+          <ul class="widget-list">
+            <li>
+              <strong>Mid-Semester Exams:</strong> Exam timetables will be published next week.
+            </li>
+            <li>
+              <strong>National Hackathon:</strong> Registrations are now open. Visit the events section to register.
+            </li>
+            <li>
+              <strong>Library Notice:</strong> Central Library reading room open extended hours.
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>⚡ Quick Links</h3>
+          <ul class="widget-list">
+            <li><a href="register.html">Student Registration Form</a></li>
+            <li><a href="login.html">Sign In to Portal</a></li>
+            <li><a href="contact.html">Campus Helpdesk Directory</a></li>
+            <li><a href="admin.html">Administrator Control Center</a></li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- 4. Semantic Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>StudentHub Portal</h4>
+          <p>A centralized academic portal designed to facilitate student learning and campus administration.</p>
+        </div>
+        <div class="footer-column">
+          <h4>University Helpdesk</h4>
+          <p>University Main Campus</p>
+          <p>Email: support@studenthub.edu</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

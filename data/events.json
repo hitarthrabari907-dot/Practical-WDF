@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Campus Hackathon 2026",
+    "category": "Technical",
+    "description": "A 36-hour coding challenge focused on web apps, artificial intelligence, and smart campus solutions.",
+    "date": "2026-10-10T09:00:00",
+    "venue": "Central Auditorium",
+    "status": "Limited seats"
+  },
+  {
+    "id": 2,
+    "title": "Web Development Masterclass",
+    "category": "Workshop",
+    "description": "Build a responsive interface with semantic HTML, modern CSS layouts, and JavaScript.",
+    "date": "2026-10-18T10:00:00",
+    "venue": "Computer Lab 304",
+    "status": "Registration open"
+  },
+  {
+    "id": 3,
+    "title": "Cybersecurity: The Human Factor",
+    "category": "Seminar",
+    "description": "A guest lecture about practical security habits, threat modeling, and ethical testing.",
+    "date": "2026-10-24T14:00:00",
+    "venue": "Seminar Hall 1",
+    "status": "Registration open"
+  },
+  {
+    "id": 4,
+    "title": "Annual Youth Festival",
+    "category": "Cultural",
+    "description": "Three days of music, drama, quiz competitions, and student art exhibitions.",
+    "date": "2026-11-05T09:30:00",
+    "venue": "University Grounds",
+    "status": "Coming soon"
+  },
+  {
+    "id": 5,
+    "title": "Robotics Build Day",
+    "category": "Technical",
+    "description": "Form a team and prototype a small autonomous robot with the campus robotics club.",
+    "date": "2026-11-12T11:00:00",
+    "venue": "Innovation Lab",
+    "status": "Registration open"
+  },
+  {
+    "id": 6,
+    "title": "Research Writing Clinic",
+    "category": "Workshop",
+    "description": "Learn how to structure a research paper, cite sources, and present findings clearly.",
+    "date": "2026-11-20T13:00:00",
+    "venue": "Library Seminar Room",
+    "status": "Coming soon"
+  },
+  {
+    "id": 7,
+    "title": "Designing for Accessibility",
+    "category": "Seminar",
+    "description": "Explore inclusive design principles and test common accessibility requirements.",
+    "date": "2026-12-02T15:00:00",
+    "venue": "Lecture Theatre 2",
+    "status": "Registration open"
+  },
+  {
+    "id": 8,
+    "title": "Inter-College Cultural Showcase",
+    "category": "Cultural",
+    "description": "A celebration of dance, music, theatre, and creative work from nearby colleges.",
+    "date": "2026-12-12T10:00:00",
+    "venue": "Open Air Theatre",
+    "status": "Coming soon"
+  }
+]
