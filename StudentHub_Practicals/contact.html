@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal - Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Semantic Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.php" class="brand-title">
+        <span style="font-size: 1.6rem;">🎓</span>
+        <div>
+          <h1>StudentHub</h1>
+          <span class="tagline">University Student & Academic Portal</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.php" class="active">Contact</a></li>
+          <li><a href="practicals.php">Learning Lab</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.php">Home</a></li>
+        <li aria-current="page">Contact Us</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="container">
+
+    <section class="page-banner">
+      <h2>Campus Contact & Helpdesk</h2>
+      <p>Have an inquiry or issue regarding the portal? Reach out to the university administration and support team.</p>
+    </section>
+
+    <div class="layout-with-sidebar">
+
+      <section>
+        
+        <!-- Contact Form -->
+        <form action="contact.html" method="GET" style="margin-bottom: 25px;">
+          <fieldset>
+            <legend>Send an Inquiry</legend>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="contact-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" placeholder="name@example.com" required>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="query-category">Category <span class="required">*</span></label>
+                <select id="query-category" name="category" required>
+                  <option value="">-- Choose Category --</option>
+                  <option value="academic">Academic & Exams</option>
+                  <option value="portal">StudentHub Portal Issue</option>
+                  <option value="admission">Admissions</option>
+                  <option value="other">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="9876543210">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message-subject">Subject <span class="required">*</span></label>
+              <input type="text" id="message-subject" name="subject" placeholder="Subject of query" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message-body">Message <span class="required">*</span></label>
+              <textarea id="message-body" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </fieldset>
+        </form>
+
+        <!-- Department Directory -->
+        <section>
+          <h3 style="color: #003366; margin-bottom: 12px;">Department Directory</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Office / Department</th>
+                  <th scope="col">Contact Person</th>
+                  <th scope="col">Extension</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Student Registrar Desk</td>
+                  <td>Mr. H. R. Trivedi</td>
+                  <td>Ext. 101</td>
+                  <td>registrar@university.edu</td>
+                </tr>
+                <tr>
+                  <td>Examination Section</td>
+                  <td>Prof. D. K. Solanki</td>
+                  <td>Ext. 108</td>
+                  <td>exams@university.edu</td>
+                </tr>
+                <tr>
+                  <td>IT Support Desk</td>
+                  <td>System Admin</td>
+                  <td>Ext. 220</td>
+                  <td>support@studenthub.edu</td>
+                </tr>
+                <tr>
+                  <td>Career & Placement Cell</td>
+                  <td>Dr. A. B. Joshi</td>
+                  <td>Ext. 145</td>
+                  <td>placements@university.edu</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- Sidebar -->
+      <aside aria-label="Campus Location">
+        
+        <div class="sidebar-widget">
+          <h3>📍 Campus Address</h3>
+          <!-- Semantic address tag -->
+          <address style="font-style: normal; font-size: 0.9rem; line-height: 1.5; color: #333333;">
+            <strong>Central University Campus</strong><br>
+            University Road, Knowledge City,<br>
+            City Campus - 380001<br><br>
+            <strong>Phone:</strong> +91 9876543210<br>
+            <strong>Toll Free:</strong> 1800-111-222
+          </address>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>⏰ Office Hours</h3>
+          <ul class="widget-list">
+            <li><strong>Mon - Fri:</strong> 09:00 AM - 05:00 PM</li>
+            <li><strong>Saturday:</strong> 09:00 AM - 01:00 PM</li>
+            <li><strong>Sunday:</strong> Closed</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>🚑 Emergency Contact</h3>
+          <ul class="widget-list">
+            <li><strong>Campus Medical:</strong> Ext. 911</li>
+            <li><strong>Campus Security:</strong> Ext. 100</li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>StudentHub Portal</h4>
+          <p>A centralized academic portal designed to facilitate student learning and campus administration.</p>
+        </div>
+        <div class="footer-column">
+          <h4>University Helpdesk</h4>
+          <p>University Main Campus</p>
+          <p>Email: support@studenthub.edu</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudentHub Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+config/database.local.php
+data/*.csv
+data/*.jsonl
+
+# Uploaded event posters are local project data; include only deliberate demo images if needed.
+/uploads/event-posters/*
+!/uploads/event-posters/.htaccess
